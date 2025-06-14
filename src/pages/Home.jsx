@@ -6,7 +6,7 @@ function Home() {
     const [techInfo, setTechInfo] = useState(undefined)
 
     useEffect(() => {
-        axios.get("https://jeonggyul.github.io/db.json/techStack")
+        axios.get("https://jeonggyul.github.io/assets/db.json/techStack")
             .then((data) => {
                 setTechInfo(data.data)
             })
